@@ -1,0 +1,58 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>reveal.js</title>
+
+		<link rel="stylesheet" href="{{ url_for('static', filename='css/reset.css') }}">
+		<link rel="stylesheet" href="{{ url_for('static', filename='css/reveal.css') }}">
+		<link rel="stylesheet" href="{{ url_for('static', filename='css/theme/black.css') }}">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="{{ url_for('static', filename='lib/css/monokai.css') }}">
+
+		<!-- Printing and PDF exports -->
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section><h1>Python in the interwebs!</h1></section>
+				<section>
+					<h2>What is the internet?</h2>
+					<article>
+						The internet is a global network, which always computer to
+					communicate all over the word. </article>
+					<article>A network is a group of computers that are connected</article>
+
+				</section>
+				<section>Client side/Server side model</section>
+				<section>Communitcation</section>
+				<section>Websites</section>
+				<section>Frontend</section>
+				<section>Backend</section>
+				<section>Using python for web development</section>
+				<section>Sources</section>
+			</div>
+		</div>
+
+
+
+		<!-- all of the javascript -->
+		<script src="{{ url_for('static', filename='js/reveal.js') }}"></script>
+		<script>
+			// More info about config & dependencies:
+			// - https://github.com/hakimel/reveal.js#configuration
+			// - https://github.com/hakimel/reveal.js#dependencies
+			Reveal.initialize({
+				dependencies: [
+					{ src: '../static/plugin/markdown/marked.js' },
+					{ src: '../static/plugin/markdown/markdown.js' },
+					{ src: '../static/plugin/notes/notes.js', async: true },
+					{ src: '../static/plugin/highlight/highlight.js', async: true }
+				]
+			});
+		</script>
+	</body>
+</html>
