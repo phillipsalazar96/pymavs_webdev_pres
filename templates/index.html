@@ -1,0 +1,128 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>The InterWebs</title>
+
+		<link rel="stylesheet" href="{{ url_for('static', filename='css/reset.css') }}">
+		<link rel="stylesheet" href="{{ url_for('static', filename='css/reveal.css') }}">
+		<link rel="stylesheet" href="{{ url_for('static', filename='css/theme/moon.css') }}">
+		<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="{{ url_for('static', filename='lib/css/moon.css') }}">
+
+		<!-- Printing and PDF exports -->
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section><h1>Python in the interwebs!</h1></section>
+				<section>
+					<h2>What is the internet?</h2>
+					<article>
+						The internet is a global network, which always computer to
+					communicate all over the word. </article>
+					<article>A network is a group of computers that are connected</article>
+
+				</section>
+				<section>
+					<h3>Client side/Server side model</h3>
+					<table style="width:100%">
+					  <tr>
+					    <th>Client side</th>
+					    <th>Server side</th>
+					  </tr>
+					  <tr>
+					    <td>Web browser (chrome, firefox, Safari)</td>
+					    <td>Web Server (Apache2 / Nginx)</td>
+					  </tr>
+						<tr>
+							<td>Render web pages</td>
+							<td>Send Web pages to the web browser</td>
+						</tr>
+					</table>
+
+
+				</section>
+				<section>
+					<h3>Communitcation</h3>
+					<p>HTTP: Hyper Text Tranfer Protocol</p>
+					<p>The protocol for the web that allows you to request webpages.</p>
+
+					<h4>Common HTTP response</h4>
+					<ul>
+						<li>200: Ok.</li>
+						<li>404: Not Found.</li>
+						<li>500: Server Error.</li>
+					</ul>
+				</section>
+				<section>
+					<h3>Websites or Apps?</h3>
+
+					<table style="width:100%">
+						<tr>
+							<th>Website</th>
+							<th>Web Application</th>
+						</tr>
+						<tr>
+							<td>A website is a collection of publicly accessible, interlinked Web pages that share a single domain name (Techopedia.com).</td>
+							<td>Web Application  is any program that is accessed over a network connection using HTTP, rather than existing within a device’s memory (Techopedia.com).</td>
+
+						</tr>
+						<tr>
+
+						</tr>
+					</table>
+
+					<!--<p>A website is a collection of publicly accessible, interlinked Web pages that share a single domain name (Techopedia.com). </p>
+					<p>Web Application  is any program that is accessed over a network connection using HTTP, rather than existing within a device’s memory (Techopedia.com).</p>
+				-->
+				</section>
+				<section>
+					<h3>Frontend</h3>
+					<p>Is the look and feel of the website.</p>
+					<h4>Technologies Use</h4>
+					<ul>
+						<li>HTML</li>
+						<li>CSS</li>
+						<li>Javscript</li>
+					</ul>
+				</section>
+				<section>
+					<h3>Backend</h3>
+					<p>The logic of the website. So any programming language will work</p>
+					<h4>Concepts</h4>
+					<ul>
+						<li>Databases</li>
+						<li>GET/POST request</li>
+						<li>Algorithms</li>
+					</ul>
+				</section>
+				<section>
+					<h3>Using python for web development</h3>
+					<p>Because python is Awesome!!!!!!</p>
+				</section>
+			</div>
+		</div>
+
+
+
+		<!-- all of the javascript -->
+		<script src="{{ url_for('static', filename='js/reveal.js') }}"></script>
+		<script>
+			// More info about config & dependencies:
+			// - https://github.com/hakimel/reveal.js#configuration
+			// - https://github.com/hakimel/reveal.js#dependencies
+			Reveal.initialize({
+				dependencies: [
+					{ src: '../static/plugin/markdown/marked.js' },
+					{ src: '../static/plugin/markdown/markdown.js' },
+					{ src: '../static/plugin/notes/notes.js', async: true },
+					{ src: '../static/plugin/highlight/highlight.js', async: true }
+				]
+			});
+		</script>
+	</body>
+</html>
